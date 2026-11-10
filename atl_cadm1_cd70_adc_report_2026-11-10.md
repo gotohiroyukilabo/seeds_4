@@ -4,6 +4,8 @@
 
 追補：同日、正常cDC1傷害と単独ADCの正常細胞毒性の比較を第16節に追加。これに合わせ、cDC1の完全温存を事実上の必須条件としていた判断を修正した。
 
+追加追補：同日、CADM1・CD70を発現する正常細胞を第17節に整理。恒常的発現と活性化依存発現、ヒトとマウス、表面タンパク質とRNAの証拠を区別した。
+
 対象：成人T細胞白血病・リンパ腫（ATL／ATLL）。CD25を用いず、CADM1とCD70の二重認識を新しい提案として評価する。
 
 本資料は公開情報に基づく創薬提案であり、小野薬品その他の企業の実際の開発計画を示すものではない。「確認事実」「解釈」「設計仮説」を区別する。
@@ -415,3 +417,81 @@ cDC1で特に問題になるのは、取り込んだ腫瘍・感染由来抗原�
 | 27 | [Cytlak et al. Differential IRF8 Transcription Factor Requirement Defines Two Pathways of Dendritic Cell Development in Humans](https://pmc.ncbi.nlm.nih.gov/articles/PMC7447982/) | 2020年、Immunity。IRF8変異9人・3家系を含むヒト一次研究 |
 | 28 | [The lifespan and kinetics of human dendritic cell subsets and their precursors in health and inflammation](https://pmc.ncbi.nlm.nih.gov/articles/PMC11488382/)、DOI:10.1084/jem.20220867 | 2024-10-17オンライン、J Exp Med。ヒト細胞標識と動態モデル。ADC投与後の回復試験ではない |
 | 29 | [Lymphatic-preserving treatment sequencing with immune checkpoint inhibition unleashes cDC1-dependent antitumor immunity in HNSCC](https://pmc.ncbi.nlm.nih.gov/articles/PMC9314425/) | 2022年。時期別cDC1除去を含むマウス一次研究。ATL・ADCへの直接証拠ではない |
+
+## 17．追補：CADM1・CD70を発現する正常細胞の整理
+
+調査・追記日：**2026年11月10日**。ヒトの非悪性細胞を中心とし、正常組織、分離細胞、活性化培養の結果を区別した。網羅的な陰性証明ではなく、本ADCの正常細胞評価パネルを選ぶための整理である。
+
+### 17.1 発現情報の読み方
+
+**CADM1は複数の正常組織に発現する接着分子であり、CD70は主に免疫細胞の活性化状態に応じて発現する。どちらも腫瘍専用抗原ではない。** 特にCD70は、静止時の正常組織だけを調べると、治療中の感染・炎症に伴って増える標的細胞を見落とし得る。
+
+表中の「発現」は、明記した測定条件での確認を意味する。次の四つは同義ではない。
+
+- **RNA検出：** 転写の存在。細胞表面の抗原密度は示さない。
+- **組織IHC／免疫蛍光：** タンパク質の細胞・組織内局在。細胞質染色や切片で露出したエピトープも含み得る。
+- **生細胞表面のフローサイトメトリー：** 表面結合のより直接的な証拠。ただし培養・刺激条件に左右される。
+- **ADCによる内在化・傷害：** 発現とは別に必要な機能実証。陽性染色だけでは毒性の発生を断定できない。
+
+Human Protein Atlas（HPA）のHigh／Medium／LowはIHCの半定量注釈であり、分子数／細胞ではない。また、CD70の正常組織タンパク質の総括注釈は確認時点で未整備（Pending normal tissue annotation）であり、N/Aを陰性と読まない［30,34］。
+
+### 17.2 CADM1：正常細胞での主な発現
+
+| 正常細胞・部位 | 確認された発現と条件 | 根拠 | 本ADCでの意味・未確認点 |
+| --- | --- | --- | --- |
+| **cDC1：CD141高発現樹状細胞** | ヒトの組織cDC1でCADM1を発現 | ヒト一次研究［5］ | CD70が誘導される状態と合わせて最初に共発現・送達を測る。ただし全cDC1が常時二重陽性とはしない |
+| **肺マスト細胞** | 非悪性のヒト肺由来マスト細胞で表面CADM1を確認 | 分離細胞のフロー・接着機能実験［31］ | cDC1以外の正常免疫細胞として評価対象に追加。相手細胞への接着実験だけから、相手にもCADM1があると推定しない |
+| **肺胞上皮細胞** | HPAではI型Medium、II型High | ヒト正常肺IHC［30］ | 肺の正常細胞評価に含める。CD70との共発現は別途確認 |
+| **腎尿細管など** | HPAでは遠位尿細管High、集合管Low、Bowman嚢High。尿細管で基底側・側方膜局在の記載 | 正常腎IHCとHPA総括［8,30］ | 「腎臓全体が均一陽性」とはしない。CADM1陽性区画へのADCアクセス・送達を確認 |
+| **膵島のα・β・δ・PP細胞** | ヒトの主要4種の膵島細胞で細胞膜CADM1を確認 | ヒト膵のIHC・二重免疫蛍光［32］ | 内分泌機能への作用を検証。マウスでは主にα細胞という種差があり、マウス正常膵の結果だけでヒト安全性を判断しない |
+| **中枢・末梢の神経系** | HPAでは中枢神経系に豊富。大脳皮質はneuropil（神経突起等の網状領域）High、末梢神経Medium | ヒトIHC［8,30］ | 神経系での局在とADC到達性を別に検討。「全神経細胞の細胞体が高発現」とはしない |
+| **腺上皮・生殖組織** | HPAでは唾液腺の腺細胞Medium、精巣で豊富との総括 | ヒトIHC・組織総括［8,30］ | 全腺・全精巣細胞が同程度とはしない。候補抗体の正常組織交差反応性で細胞種・局在を詰める |
+| **血管内皮・血管平滑筋** | 28種類のヒト組織の血管で発現を報告。ただしHPAの一部内皮注釈とは一致しない | CADM1とvWF／α-SMAの二重免疫染色［33］、HPA［30］ | 血管を陰性対照に固定しない。不一致を解消するため、候補抗体と別エピトープ抗体で再検証 |
+
+**血管の発現は特に慎重に扱う。** 2012年原著は調べた28組織の血管内皮・平滑筋でCADM1を検出した一方、HPAでは肺などの内皮に「Not detected」の注釈がある［30,33］。抗体・エピトープ・固定条件・検出感度・血管区画の差が原因になり得るが、今回その原因は特定できない。従って「血管には広く必ず発現」または「血管には発現しない」のどちらにも一律に整理しない。
+
+通常の非感染T/B細胞に関しても、CADM1を全細胞の恒常的な陽性マーカーとは扱わない。一方、HTLV-1感染細胞のCADM1発現は、非悪性であっても健常非感染細胞と区別する［10］。本テーマで温存する細胞と、感染細胞として除去し得る細胞を混同しない。
+
+### 17.3 CD70：静止細胞より、活性化細胞と一部の組織内細胞が重要
+
+| 正常細胞・部位 | 静止時／組織での状態 | 活性化時などの発現と証拠 | 本ADCでの意味 |
+| --- | --- | --- | --- |
+| **T細胞** | 一般に発現は限定的。正常末梢血にも少数のCD70陽性・プライミング済み表現型の細胞が存在 | ヒトT細胞でTCR関連刺激に加え、APC・共刺激・炎症性サイトカインによる表面発現増強［35］ | 「正常T細胞は陰性」と固定しない。静止・活性化の両方を測る |
+| **B細胞** | 正常末梢血・扁桃の一部にCD70陽性集団 | BCR刺激とCD40刺激で誘導・増強。正常ヒトB細胞の一次研究［36］ | CD70は全B細胞の恒常的抗原ではないが、免疫応答中のB細胞が標的になり得る |
+| **cDC1** | CADM1陽性であっても、CD70は一律・恒常的陽性とはしない | ヒトcDC1で活性化CD4 T細胞による刺激後にCD70増加［6］ | 本ペアの二重陽性正常細胞候補。活性化後の同一細胞上の密度と内在化を評価 |
+| **その他の樹状細胞** | 静止時の陰性所見だけでは不十分 | CD70発現は成熟・刺激条件に依存。cDC1の結果をcDC2・pDC・単球由来DC全部へ一律外挿しない | 本調査では各ヒトDC亜集団の陽性率・密度の網羅的比較は未完了。独立した測定対象とする |
+| **NK細胞** | 全静止NK細胞の恒常的発現は主張しない | ヒトの長期活性化NK細胞集団・クローンで表面CD70を確認［37］ | 活性化培養という条件付きの証拠。健常血中NK全体への外挿は不可 |
+| **正常成人胸腺の髄質細胞** | 正常成人胸腺IHCでCD70陽性細胞を確認 | 原著の図注は「髄質上皮細胞または樹状細胞」と記載［38］ | 「胸腺上皮で確実に陽性」と細胞種まで断定しない。ヒトでの細胞同定とCADM1との共染色が必要 |
+| **腎・肺などの非リンパ系実質細胞** | 今回の資料から、健常ヒトの実質細胞に広く恒常的な表面発現があるとは結論できない | HPAの組織RNAや未注釈データだけでは判断不可［34］ | 「未確認」を「陰性」に置き換えない。炎症時も含む候補抗体の交差反応性試験で確認 |
+
+正常胸腺について、マウスでは髄質上皮細胞・DCのCD70とTreg形成の関係を示した研究がある［39］。ただし、ヒトのIHCで細胞同定が曖昧な箇所を、このマウス研究だけで確定しない。また、文献で挙げられる腸管固有層のCD70陽性抗原提示細胞についても、種・細胞定義を確認せずヒトの確定正常標的として追加しない。
+
+### 17.4 この発現分布が二重特異性化の仮説に与える意味
+
+**今回の発現調査は、「CADM1陽性正常細胞をCD70でさらに選別する」という設計の理由を支持する。ただし、それらの正常細胞がCD70陰性であることまで証明したわけではない。**
+
+| 比較する正常細胞群 | 二重化で期待すること | 成立に必要な確認 |
+| --- | --- | --- |
+| CADM1陽性の肺・腎・膵島・神経系・マスト細胞など | CADM1単独ADCより送達を減らす | 同じ細胞が必要な条件下でCD70低発現であること、弱いCADM1腕単独では十分な送達が起きないこと |
+| CD70陽性の活性化T/B/NK細胞 | CD70単独ADCより送達を減らす | 同じ細胞のCADM1発現が十分低いこと。非悪性HTLV-1感染T細胞は別群で評価 |
+| 活性化cDC1などの共発現候補 | 単純なAND条件だけでは保護を保証できない | ATLとの抗原密度・配置・内在化・薬物感受性差と、第16節の機能回復を確認 |
+| 血管・胸腺など、発現または細胞同定が不確かな部位 | 現段階では保護を主張しない | 正常組織の多重染色、候補抗体の結合、可能なら分離生細胞で検証 |
+
+実験パネルには、従来のcDC1・活性化T/B細胞に加え、**肺胞上皮、腎のCADM1陽性区画、ヒト膵島、肺マスト細胞、血管内皮**を優先候補として加える。神経系・精巣・胸腺などは正常組織交差反応性と分布を確認し、機能試験へ進む優先度を決める。これは発現に基づく評価計画であり、これら全部に臨床毒性が生じるという予測ではない。
+
+### 17.5 追加参照資料
+
+全資料の確認日：2026年11月10日。HPAは随時更新されるため、今回確認した注釈を記載した。既出［5,6,8,10］は第15節参照。
+
+| 番号 | 資料・URL／DOI | 公開時期・証拠 |
+| --- | --- | --- |
+| 30 | [HPA：CADM1正常組織の一次染色データ](https://www.proteinatlas.org/ENSG00000182985-CADM1/tissue/primary%2Bdata)／[正常肺の詳細](https://www.proteinatlas.org/ENSG00000182985-CADM1/tissue/lung) | 随時更新。ヒトIHC。抗体・細胞区画・注釈ごとの違いに注意 |
+| 31 | [CADM1 Is a Key Receptor Mediating Human Mast Cell Adhesion to Human Lung Fibroblasts and Airway Smooth Muscle Cells](https://pmc.ncbi.nlm.nih.gov/articles/PMC3631237/)、DOI:10.1371/journal.pone.0061579 | 2013年、PLoS One。ヒト肺マスト細胞の表面発現・機能 |
+| 32 | [Cell adhesion molecule 1 is a novel pancreatic-islet cell adhesion molecule that mediates nerve-islet cell interactions](https://pubmed.ncbi.nlm.nih.gov/18471525/) | 2008年、Gastroenterology。ヒトとマウスの膵島細胞を比較 |
+| 33 | [Cell adhesion molecule 1 (CADM1) is ubiquitously present in the endothelium and smooth muscle cells of the human macro- and micro-vasculature](https://pubmed.ncbi.nlm.nih.gov/22940845/)、DOI:10.1007/s00418-012-1024-2 | 2012-09-01オンライン／11月号。28種類のヒト組織の血管免疫染色 |
+| 34 | [HPA：CD70正常組織](https://www.proteinatlas.org/ENSG00000125726-CD70/tissue) | 随時更新。RNAとタンパク質注釈を区別。正常組織タンパク質の総括注釈は未整備 |
+| 35 | [Antigen-presenting cell-derived signals determine expression levels of CD70 on primed T cells](https://pmc.ncbi.nlm.nih.gov/articles/PMC1456715/)、DOI:10.1046/j.1365-2567.1997.00134.x | 1997-01、Immunology。ヒトT細胞の表面発現と刺激依存性 |
+| 36 | [Phenotype and function of human B cells expressing CD70 (CD27 ligand)](https://pubmed.ncbi.nlm.nih.gov/8977292/) | 1996年、Eur J Immunol。ヒト末梢血・扁桃B細胞、活性化実験 |
+| 37 | [Reciprocal expression of CD70 and of its receptor, CD27, in human long term-activated T and natural killer (NK) cells](https://pubmed.ncbi.nlm.nih.gov/9067541/)、DOI:10.1046/j.1365-2249.1997.d01-942.x | 1997-03、Clin Exp Immunol。長期活性化したヒト細胞での実証 |
+| 38 | [CD70 in Thymic Squamous Cell Carcinoma: Potential Diagnostic Markers and Immunotherapeutic Targets](https://pubmed.ncbi.nlm.nih.gov/35145909/)、DOI:10.3389/fonc.2021.808396 | 2022-01-25。Fig.1に正常成人胸腺の対照染色。細胞同定の表現に留意 |
+| 39 | [Epithelial and dendritic cells in the thymic medulla promote CD4+Foxp3+ regulatory T cell development via the CD27–CD70 pathway](https://pmc.ncbi.nlm.nih.gov/articles/PMC3620350/)、DOI:10.1084/jem.20112061 | 2013年、J Exp Med。マウス胸腺の機序研究。ヒトでの細胞種同定を代替しない |
